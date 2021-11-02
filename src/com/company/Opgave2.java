@@ -26,15 +26,11 @@ public class Opgave2 {
                 }
             in.close();
 
-
-
             } catch (FileNotFoundException e ) {
                 e.printStackTrace();
             }
 
             System.out.println(Arrays.toString(tal));
-
-
 
             Main.printArray(tal , tal.length);
 
@@ -55,6 +51,7 @@ public class Opgave2 {
                 for (int j : tal) {
                     writer.write(j + 10 + "\n");
                 }
+
                 writer.close();
 
             } catch (IOException  e ) {

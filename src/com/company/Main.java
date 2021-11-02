@@ -1,11 +1,12 @@
 package com.company;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
 
         Scanner input = new Scanner(System.in);
 
@@ -23,14 +24,19 @@ public class Main {
 
         opgave2.readFile();
 
+        Opgave3 opgave3 = new Opgave3();
+
+        opgave3.lavFile();
+
+        opgave3.readFile();
 
     }
 
 
     public static void printArray(int[] array, int arrayLength ) {
-        for (int i = 0; i < arrayLength ; i++) {
-            System.out.println(array[i]);
-        }
+
+            System.out.println(Arrays.toString(array));
+
     }
 
     public static double average(int[] array , int arrayLength) {
